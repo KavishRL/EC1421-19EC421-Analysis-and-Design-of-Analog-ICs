@@ -1,42 +1,68 @@
 # EC1421-19EC421-Analysis-and-Design-of-Analog-ICs
-# DIFFERENTIATOR
+# Differential Amplifier
 
-## AIM:
-To design and test the performance of differentiator circuits using Op-amp.
+## AIM: 
 
-## APPARATUS REQUIRED:
-<img width="984" height="273" alt="image" src="https://github.com/user-attachments/assets/2bfcbf8e-9b24-441c-a0c5-b04e0b1bee8d" />
+ To design and construct a  differential amplifier. 
 
-## THEORY:
-## DIFFEERENTIATOR:
-The differentiator circuit performs the mathematical operation of differentiation; that is, the output waveform is the derivative of the input waveform. The differentiator may be constructed from a basic inverting amplifier if an input resistor R1 is replaced by a capacitor C1 . The expression for the output voltage is given as,
+ 
+## APPARATUS REQUIRED
 
-Vo = - Rf C1 ( dVi /dt )
+<img width="646" height="221" alt="image" src="https://github.com/user-attachments/assets/826c9635-6f51-44a2-82b1-4c4f6626c881" />
 
-Here the negative sign indicates that the output voltage is 180 0 out of phase with the input signal. A resistor Rcomp = Rf is normally connected to the non-inverting input terminal of the op-amp to compensate for the input bias current. A workable differentiator can be designed by implementing the following steps:
-1. Select fa equal to the highest frequency of the input signal to be differentiated. Then, assuming a value of C1 < 1 μF, calculate the value of Rf.
-2. Choose fb = 20 fa and calculate the values of R1 and Cf so that R1C1 = Rf Cf.
-The differentiator is most commonly used in wave shaping circuits to detect high frequency components in an input signal and also as a rate–of–change detector in FM modulators.
+## THEORY
+## Differential Amplifier
 
-## CIRCUIT DIAGRAM:
+A circuit that amplifies that amplifies the difference between two input signals is called 
+as differential amplifier. It is useful in instrumentation amplifier. If the two input signals are the 
+same, the output should be zero. Differential amplifier with a single op-amp has the exact gain of 
+an inverting amplifier and it is given as
+
+<img width="202" height="70" alt="image" src="https://github.com/user-attachments/assets/3cd34e03-1b28-4e8a-90a6-fe0c096c84cc" />
+
+## CIRCUIT DIAGRAM: 
+
+![WhatsApp Image 2025-11-14 at 11 04 13_e2bd6382](https://github.com/user-attachments/assets/992e6e4d-d3d9-4a5f-bc08-f2e52ce317cf)
+
+![WhatsApp Image 2025-11-14 at 11 04 11_0edd119f](https://github.com/user-attachments/assets/8b947d31-2398-4acb-a6ba-ccc095f5762c)
+
+
 
 ## MODEL GRAPH:
 
-## PROCEDURE:
-### Differentiator:
-1. Connections are given as per the circuit diagram
-2. + Vcc and - Vcc supply is given to the power supply terminal of the Op-Amp IC.
-3. By adjusting the amplitude and frequency knobs of the function generator, appropriate input voltage is applied to the inverting input terminal of the Op- Amp.
-4. The output voltage is obtained in the CRO and the input and output voltage waveforms are plotted in a graph sheet.
-   
-## DESIGN:
-<img width="837" height="443" alt="image" src="https://github.com/user-attachments/assets/fee44ef4-8ae5-4b7a-938e-927c4492992e" />
+![WhatsApp Image 2025-11-14 at 11 04 10_f1aba00f](https://github.com/user-attachments/assets/2ce3d32a-f573-4abb-925f-d09fe832b543)
+
+
+## PROCEDURE:  
+## Differential amplifier 
+1. Select the value of R1, R2, R3 & Rf such that R1=R2 and R3=Rf.  
+2. Connect the circuit as per as the circuit diagram.  
+3. Provide constant input voltage Vin1 to Non-inverting terminal of op-amp through R1 & 
+constant input voltage Vin2 to inverting terminal of op-amp through R2.  
+4. Measure the output voltage using DSO.  
+5. Calculate the theoretical Vo and compare it with practical Vo.  
+6. Practical output & theoretical calculation should be approximately equal.  
+7. Plot the graph of the input wave versus output wave for any one practical case. 
+
+## DESIGN
+
+<img width="284" height="156" alt="image" src="https://github.com/user-attachments/assets/48e39114-6231-4be4-9ac3-f0cb8999dc24" />
 
 ## TABULATION:
 
+![WhatsApp Image 2025-11-14 at 11 04 09_2cd0143c](https://github.com/user-attachments/assets/d2b2ec96-64a7-455e-82ed-33686292f316)
+
+
 ## CALCULATIONS:
+
+![WhatsApp Image 2025-11-14 at 11 04 07_5556de90](https://github.com/user-attachments/assets/b975ba4b-8320-4cba-b7e7-b93ef20812b5)
+
 
 ## GRAPH:
 
-## RESULT:
-Thus the Differentiator using op-amp are designed and their performance was successfully tested using op-amp IC 741.
+![WhatsApp Image 2025-11-14 at 11 04 05_5f61871e](https://github.com/user-attachments/assets/87589e45-cf52-4a16-9dd8-951b3ffc4421)
+
+
+ ## RESULTS:
+ Thus the Inverting, Non-Inverting and Differential Amplifiers are designed and their 
+performance was successfully tested using op-amp IC 741.
